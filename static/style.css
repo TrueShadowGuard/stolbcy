@@ -1,0 +1,35 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#routes {
+    width: 500px;
+}
+
+#listeners {
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.listener {
+    border: 1px solid
+}
+
+#log {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
