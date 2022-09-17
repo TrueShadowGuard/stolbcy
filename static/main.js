@@ -88,7 +88,10 @@ function notifyRouteFound(id) {
 
     setTimeout(() => {
         $logger.remove();
-    }, 10_000)
+    }, 10_000);
+
+    Navigator.vibrate(500);
+    new Notification("Есть места на " + id);
 }
 
 function populateSelects() {
