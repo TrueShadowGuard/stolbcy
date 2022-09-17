@@ -9,7 +9,7 @@ $date.value = getDate(1);
 
 const $routes = document.querySelector("#routes");
 const $listeners = document.querySelector("#listeners");
-let listeners = [];
+let listeners = [{id: 1140333}];
 
 renderListeners();
 populateSelects();
@@ -90,7 +90,7 @@ function notifyRouteFound(id) {
         $logger.remove();
     }, 10_000);
 
-    Navigator.vibrate(500);
+    navigator.vibrate(500);
     new Notification("Есть места на " + id);
 }
 
